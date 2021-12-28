@@ -1,0 +1,19 @@
+<nav>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/">Home</a></li>
+    <li class="breadcrumb-item active">Dashboard</li>
+  </ol>
+</nav>
+
+<h2>Dashboard</h2>
+<div class="container-fluid">
+  <mat-grid-list cols="4">
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <div style="width: 100%;height: 100%;"> <mat-card style="text-align: center;font-family:Times New Roman; background-color: rgba(228, 228, 222, 0.808);"><b>Team Leader</b></mat-card></div>
+     
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="2"></mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2"></mat-grid-tile>
+
+  </mat-grid-list>
+</div>
