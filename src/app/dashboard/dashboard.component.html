@@ -12,14 +12,28 @@
       <div style="width: 100%;height: 100%;">
         <div>
           <mat-card style="text-align: center;font-family:Times New Roman; background-color: rgba(228, 228, 222, 0.808);">
-            <b>{{Designation}}</b></mat-card>
+            <b>{{TEAM_LEADER}}</b></mat-card>
         </div>
 
           <div class="userImageDiv">
             <img class="userImage"  src="../../assets/user.png">
           </div>
           <div align=center style="padding-top: 10px;">
-            {{Username}}
+            {{teamSummary.teamLeader}}
+          </div>
+          <div align=center style="padding-top: 10px;">
+            <b>TEAM SUMMARY</b>
+          </div>
+          <div style="padding-top: 10px;">
+            <mat-grid-list cols="1" rowHeight="50px">
+              <mat-grid-tile
+                  *ngFor="let item  of teamSummary | keyvalue"
+                  [colspan]="1"
+                  [rowspan]="1"
+                  >
+                   <b>{{item.key}}</b> &nbsp; &nbsp; &nbsp; <b>{{item.value}}</b>
+              </mat-grid-tile>
+            </mat-grid-list>
           </div>
       </div>
 

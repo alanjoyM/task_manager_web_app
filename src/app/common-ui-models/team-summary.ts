@@ -1,6 +1,10 @@
+import { Client } from "./client";
+
 export class TeamSummary {
 
-    summeryCode:string;
+    teamLeader: string;
+
+    summeryCode:string; 
 
     noOfMembers:number;
 
@@ -11,6 +15,8 @@ export class TeamSummary {
     totalTasks: number;
 
     upcomingProjects:number;
+
+    clients: Array<Client>;
 
     errorCode: string;
 
