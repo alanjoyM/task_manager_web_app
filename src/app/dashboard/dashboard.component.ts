@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit() {
     this.Designation = 'Team Leader';
-    this.Username = 'Scott Smith';
+    this.Username = 'John Smith';
     this.NoOfTeamMembers = 67;
     this.TotalCostOfAllProjects = 240;
     this.PendingTasks = 15;
