@@ -27,11 +27,11 @@
           <div style="padding-top: 10px;">
             <mat-grid-list cols="1" rowHeight="50px">
               <mat-grid-tile
-                  *ngFor="let item  of teamSummary | keyvalue"
+                  *ngFor="let value as item  of teamSummary | keyvalue"
                   [colspan]="1"
                   [rowspan]="1"
                   >
-                   <b>{{item.key}}</b> &nbsp; &nbsp; &nbsp; <b>{{item.value}}</b>
+                   <b>{{value.key}}</b> &nbsp; &nbsp; &nbsp; <b>{{value.value}}</b>
               </mat-grid-tile>
             </mat-grid-list>
           </div>
